@@ -1,4 +1,4 @@
-# string-slice
+# string-slice [![CircleCI](https://circleci.com/gh/cakecatz/string-slice/tree/master.svg?style=svg)](https://circleci.com/gh/cakecatz/string-slice/tree/master)
 
 ## Install
 
