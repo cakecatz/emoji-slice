@@ -1,4 +1,0 @@
-{
-  "presets": ["es2015"],
-  "plugins": ["typecheck", "syntax-flow", "transform-flow-strip-types"]
-}

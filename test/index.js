@@ -1,22 +1,18 @@
-import { expect } from 'chai';
-import stringSlice from '../src';
+import test from 'ava';
+import stringSlice from '../';
 
-describe('stringSlice', () => {
-  it('slices strings', () => {
-    const text = 'Hello, World!';
-    
-    expect(stringSlice(text, 1, 5)).to.equal(text.slice(1, 5));
-    expect(stringSlice(text, 2, -1)).to.equal(text.slice(2, -1));
-    expect(stringSlice(text, 3)).to.equal(text.slice(3));
-  });
-  
-  it('slices emoji contained strings ', () => {
-    const text = '😀😬😁😂😃😄😅😆😇😉😊';
+test('slice simple strings', t => {
+  const text = 'Hello, World!';
+  t.is(stringSlice(text, 1, 5), text.slice(1, 5));
+  t.is(stringSlice(text, 2, -1), text.slice(2, -1));
+  t.is(stringSlice(text, 3), text.slice(3));
+});
 
-    expect(stringSlice(text, 0, 1)).to.equal('😀');
-    expect(stringSlice(text, 5, 6)).to.equal('😄');
-    expect(stringSlice(text, 10, 11)).to.equal('😊');
-    expect(stringSlice(text, 2, 7)).to.equal('😁😂😃😄😅');
-    expect(stringSlice(text, 0)).to.equal('😀😬😁😂😃😄😅😆😇😉😊');
-  });
+test('slices emoji contained strings ', t => {
+  const text = '😀😬😁😂😃😄😅😆😇😉😊';
+  t.is(stringSlice(text, 0, 1), '😀');
+  t.is(stringSlice(text, 5, 6), '😄');
+  t.is(stringSlice(text, 10, 11), '😊');
+  t.is(stringSlice(text, 2, 7), '😁😂😃😄😅');
+  t.is(stringSlice(text, 0), '😀😬😁😂😃😄😅😆😇😉😊');
 });
