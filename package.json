@@ -8,7 +8,7 @@
     "test": "ava",
     "test:watch": "npm test -- --watch"
   },
-  "keywords": [],
+  "keywords": ["emoji", "slice", "str", "string", "unicode"],
   "author": "Ryo Narita <mail.ryonarita@gmail.com>",
   "license": "MIT",
   "devDependencies": {
