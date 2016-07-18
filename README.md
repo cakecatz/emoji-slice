@@ -1,9 +1,9 @@
-# string-slice [![CircleCI](https://circleci.com/gh/cakecatz/string-slice/tree/master.svg?style=svg)](https://circleci.com/gh/cakecatz/string-slice/tree/master)
+# emoji-slice [![CircleCI](https://circleci.com/gh/cakecatz/emoji-slice/tree/master.svg?style=svg)](https://circleci.com/gh/cakecatz/emoji-slice/tree/master)
 
 ## Install
 
 ```bash
-$ npm install --save cakecatz/string-slice
+$ npm install --save emoji-slice
 ```
 
 ## Usage
@@ -12,7 +12,7 @@ $ npm install --save cakecatz/string-slice
 '😽😽😽'.slice(0, 1);
 //=> �
 
-stringSlice('😽😽😽', 0, 1);
+emojiSlice('😽😽😽', 0, 1);
 //=> 😽
 ```
 
