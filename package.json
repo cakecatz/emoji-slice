@@ -2,8 +2,9 @@
   "name": "emoji-slice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint ./src",
     "test": "jest",
     "test:watch": "npm test -- --watch"
@@ -18,8 +19,15 @@
   "author": "Ryo Narita <mail.ryonarita@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@tsconfig/node14": "^1.0.1",
+    "@types/jest": "^26.0.24",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.30.0",
     "jest": "^27.0.6",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
   }
 }

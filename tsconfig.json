@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "include": [
+    "src/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "lib"
+  }
+}

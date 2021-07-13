@@ -1,4 +1,4 @@
-const stringSlice = require("./");
+import { stringSlice } from "./";
 
 test("slice simple strings", () => {
   const text = "Hello, World!";
