@@ -4,11 +4,11 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "yarn build",
     "build": "tsc",
     "lint": "eslint ./src",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "yarn test -- --watch"
   },
   "keywords": [
     "emoji",
