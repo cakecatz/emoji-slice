@@ -1,4 +1,4 @@
-# emoji-slice [![CircleCI](https://circleci.com/gh/cakecatz/emoji-slice/tree/master.svg?style=svg)](https://circleci.com/gh/cakecatz/emoji-slice/tree/master)
+# emoji-slice
 
 ## Install
 
