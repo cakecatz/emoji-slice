@@ -8,10 +8,10 @@ test("slice simple strings", () => {
 });
 
 test("slices emoji contained strings ", () => {
-  const text = "😀😬😁😂😃😄😅😆😇😉😊";
+  const text = "😀😬😁🎮🧰😄😅🥯😇😉😊";
   expect(stringSlice(text, 0, 1)).toBe("😀");
   expect(stringSlice(text, 5, 6)).toBe("😄");
   expect(stringSlice(text, 10, 11)).toBe("😊");
-  expect(stringSlice(text, 2, 7)).toBe("😁😂😃😄😅");
-  expect(stringSlice(text, 0)).toBe("😀😬😁😂😃😄😅😆😇😉😊");
+  expect(stringSlice(text, 2, 7)).toBe("😁🎮🧰😄😅");
+  expect(stringSlice(text, 0)).toBe("😀😬😁🎮🧰😄😅🥯😇😉😊");
 });
